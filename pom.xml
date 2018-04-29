@@ -5,7 +5,7 @@
 	<packaging>pom</packaging>
 	<version>1.0</version>
 	<name>mklimentyev</name>
-	<url></url>
+	<url/>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -14,11 +14,16 @@
 	</properties>
 
 	<modules>
-		<module>task01</module>
+		<module>task_01</module>
 	</modules>
-	
+
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
