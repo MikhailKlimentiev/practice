@@ -11,14 +11,20 @@ import java.util.Scanner;
  */
 public class Runner {
     public static void main(String[] args) {
-//        int[][] matrix = {{1, 2}, {3, 4}, {5, 6}};
-//        Runner run = new Runner();
-//        run.transposeMatrix(matrix);
-//        RectangularMatrixTransposition rectangularMatrixTransposition = new RectangularMatrixTransposition();
-//        rectangularMatrixTransposition.RectangularMatrixTransposition();
+
         Scanner scan = new Scanner(System.in);
         SquareMatrixTransposition squareMatrixTransposition = new SquareMatrixTransposition();
-        squareMatrixTransposition.transposeMatrix(squareMatrixTransposition.getSizeAndInitializeMatrix(scan));
+        squareMatrixTransposition.transposeMatrix(squareMatrixTransposition.getSizeAndCreateAndInitializeMatrix(scan));
+
+        RectangularMatrixTransposition rectangularMatrixTransposition = new RectangularMatrixTransposition();
+        int n = rectangularMatrixTransposition.getHeightMatrix(scan);
+        int m = rectangularMatrixTransposition.getWidthMatrix(scan);
+        int[][]rectangularMatrix = rectangularMatrixTransposition.createAndInitializeAndPrintInitialMatrix(n, m);
+        int[][]transposedRectangularMatrix = rectangularMatrixTransposition.createTransposedMatrix(n, m);
+        rectangularMatrixTransposition.transposeAndPrintRectangularMatrix(n, m, rectangularMatrix, transposedRectangularMatrix);
+
+
+
 
 
     }

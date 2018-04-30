@@ -19,7 +19,7 @@ public class SquareMatrixTransposition {
      * @param scan - gets square matrix size from console
      * @return squareMatrix - initialized square matrix
      */
-    public int[][] getSizeAndInitializeMatrix(Scanner scan) {
+    public int[][] getSizeAndCreateAndInitializeMatrix(Scanner scan) {
         int squareMatrixSize = 0;
         int temp;
         boolean condition = true;
@@ -76,6 +76,6 @@ public class SquareMatrixTransposition {
             }
             System.out.println();
         }
-        System.out.println("======================================================");
+        System.out.println("==================================================");
     }
 }
