@@ -1,4 +1,4 @@
-package tasks.matrix.transpose;
+package tasks.matrix.transposition;
 
 import java.util.Scanner;
 
