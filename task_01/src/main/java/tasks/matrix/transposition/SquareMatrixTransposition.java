@@ -14,7 +14,7 @@ public class SquareMatrixTransposition {
      * getSizeAndInitializeMatrix
      * this method gets size of square matrix from console, creates square matrix, initializes square matrix
      * with random numbers, prints in console initial square matrix, returns square matrix.
-     * @param scan - gets square matrix size from console
+     * @param scan gets square matrix size from console
      * @return squareMatrix - initialized square matrix
      */
     public int[][] getSizeAndCreateAndInitializeMatrix(Scanner scan) {
@@ -53,7 +53,7 @@ public class SquareMatrixTransposition {
     /**
      * transposeMatrix
      * this method transposes received square matrix, prints transposed square matrix in console
-     * @param squareMatrix - initialized square matrix
+     * @param squareMatrix initialized square matrix
      */
     public void transposeMatrix(int[][] squareMatrix) {
         int temp;
