@@ -1,5 +1,7 @@
 package tasks.matrix.transpose;
 
+import java.util.Scanner;
+
 /**
  * Runner.
  *
@@ -12,8 +14,12 @@ public class Runner {
 //        int[][] matrix = {{1, 2}, {3, 4}, {5, 6}};
 //        Runner run = new Runner();
 //        run.transposeMatrix(matrix);
-        RectangularMatrixTransposition rectangularMatrixTransposition = new RectangularMatrixTransposition();
-        rectangularMatrixTransposition.RectangularMatrixTransposition();
+//        RectangularMatrixTransposition rectangularMatrixTransposition = new RectangularMatrixTransposition();
+//        rectangularMatrixTransposition.RectangularMatrixTransposition();
+        Scanner scan = new Scanner(System.in);
+        SquareMatrixTransposition squareMatrixTransposition = new SquareMatrixTransposition();
+        squareMatrixTransposition.transposeSquareMatrix(squareMatrixTransposition.getSizeAndInitializeSquareMatrix(scan));
+
 
 
     }
