@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * SquareMatrixTransposition.
- *
  * @author Mikhail Klimentyev
  * @version 3.0
  * @since 04/30/2018
@@ -15,7 +14,6 @@ public class SquareMatrixTransposition {
      * getSizeAndInitializeMatrix
      * this method gets size of square matrix from console, creates square matrix, initializes square matrix
      * with random numbers, prints in console initial square matrix, returns square matrix.
-     *
      * @param scan - gets square matrix size from console
      * @return squareMatrix - initialized square matrix
      */
@@ -55,7 +53,6 @@ public class SquareMatrixTransposition {
     /**
      * transposeMatrix
      * this method transposes received square matrix, prints transposed square matrix in console
-     *
      * @param squareMatrix - initialized square matrix
      */
     public void transposeMatrix(int[][] squareMatrix) {

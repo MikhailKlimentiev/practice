@@ -16,8 +16,8 @@ import java.util.Scanner;
  * Runner.
  *
  * @author Mikhail Klimentyev
- * @version 1.0
- * @since 04/29/2018
+ * @version 2.0
+ * @since 04/30/2018
  */
 public class Runner {
     public static void main(String[] args) {
