@@ -1,6 +1,6 @@
 /**
  * Package for Transpose a matrix task.
- * Includes classes below:
+ * Includes classes:
  * Runner,
  * SquareMatrixTransposition,
  * RectangularMatrixTransposition

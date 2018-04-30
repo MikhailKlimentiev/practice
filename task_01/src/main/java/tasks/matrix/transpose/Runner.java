@@ -21,9 +21,7 @@ public class Runner {
         squareMatrixTransposition.transposeSquareMatrix(squareMatrixTransposition.getSizeAndInitializeSquareMatrix(scan));
 
 
-
     }
-
 
 
 }
