@@ -13,21 +13,16 @@ public class Runner {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        // ========================= Square Matrix Transposition =====================================================
         SquareMatrixTransposition squareMatrixTransposition = new SquareMatrixTransposition();
         squareMatrixTransposition.transposeMatrix(squareMatrixTransposition.getSizeAndCreateAndInitializeMatrix(scan));
 
+        // ========================= Rectangular Matrix Transposition ================================================
         RectangularMatrixTransposition rectangularMatrixTransposition = new RectangularMatrixTransposition();
         int n = rectangularMatrixTransposition.getHeightMatrix(scan);
         int m = rectangularMatrixTransposition.getWidthMatrix(scan);
-        int[][]rectangularMatrix = rectangularMatrixTransposition.createAndInitializeAndPrintInitialMatrix(n, m);
-        int[][]transposedRectangularMatrix = rectangularMatrixTransposition.createTransposedMatrix(n, m);
+        int[][] rectangularMatrix = rectangularMatrixTransposition.createAndInitializeAndPrintInitialMatrix(n, m);
+        int[][] transposedRectangularMatrix = rectangularMatrixTransposition.createTransposedMatrix(n, m);
         rectangularMatrixTransposition.transposeAndPrintRectangularMatrix(n, m, rectangularMatrix, transposedRectangularMatrix);
-
-
-
-
-
     }
-
-
 }

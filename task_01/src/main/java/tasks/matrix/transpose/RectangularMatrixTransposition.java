@@ -11,6 +11,12 @@ import java.util.Scanner;
  */
 public class RectangularMatrixTransposition {
 
+    /**
+     * getHeightMatrix
+     * this method gets height of matrix from console
+     * @param scan - height of matrix
+     * @return n - height of matrix
+     */
     public int getHeightMatrix(Scanner scan) {
         boolean condition = true;
         int n = 0;
@@ -28,6 +34,12 @@ public class RectangularMatrixTransposition {
         return n;
     }
 
+    /**
+     * getWidthMatrix
+     * this method gets width of matrix from console
+     * @param scan - width of matrix
+     * @return m - width of matrix
+     */
     public int getWidthMatrix(Scanner scan) {
         boolean condition = true;
         int m = 0;
@@ -45,6 +57,14 @@ public class RectangularMatrixTransposition {
         return m;
     }
 
+    /**
+     * createAndInitializeAndPrintInitialMatrix
+     * this method creates matrix according to received size, initializes matrix with random numbers,
+     * prints matrix in console, returns matrix
+     * @param n - height of matrix
+     * @param m - width of matrix
+     * @return rectangularMatrix - initialized Matrix
+     */
     public int[][] createAndInitializeAndPrintInitialMatrix(int n, int m) {
         int[][] rectangularMatrix = new int[n][];
 
@@ -68,6 +88,13 @@ public class RectangularMatrixTransposition {
         return rectangularMatrix;
     }
 
+    /**
+     * createTransposedMatrix
+     * this method creates matrix to be transposed according to received size
+     * @param n - height of matrix
+     * @param m - width of matrix
+     * @return transposedRectangularMatrix - matrix to be transposed
+     */
     public int[][] createTransposedMatrix(int n, int m) {
         int[][] transposedRectangularMatrix = new int[m][];
 
@@ -77,6 +104,14 @@ public class RectangularMatrixTransposition {
         return transposedRectangularMatrix;
     }
 
+    /**
+     * transposeAndPrintRectangularMatrix
+     * this method transposes initial matrix, prints transposed matrix in console
+     * @param n - height of matrix
+     * @param m - width of matrix
+     * @param rectangularMatrix - initial matrix
+     * @param transposedMatrix - transposed matrix
+     */
     public void transposeAndPrintRectangularMatrix(int n, int m, int[][] rectangularMatrix, int[][] transposedMatrix ) {
 
         for (int i = 0; i < transposedMatrix.length; i++) {
