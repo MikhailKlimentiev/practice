@@ -1,17 +1,82 @@
 package tasks.matrix.transpose;
 
+import java.util.Scanner;
+
 /**
  * RectangularMatrixTransposition.
  *
  * @author Mikhail Klimentyev
- * @version 1.0
- * @since 04/29/2018
+ * @version 2.0
+ * @since 04/30/2018
  */
 public class RectangularMatrixTransposition {
 
-    public void getRectangularMatrixSize(scan){
+
+    public int getSizeMatrix(Scanner scan) {
+        boolean condition = true;
+        int n = 0;
+        int m = 0;
+
+        while (condition) {
+            System.out.println("Please enter count of Rectangular Matrix's rows: ");
+            if (scan.hasNextInt()) {
+                n = scan.nextInt();
+                condition = false;
+            } else {
+                System.err.println("You inputted not a number. Please try again.");
+                scan.next();
+            }
+        }
+
+        while (condition) {
+            System.out.println("Please enter count of Rectangular Matrix's columns: ");
+            if (scan.hasNextInt()) {
+                m = scan.nextInt();
+                condition = false;
+            } else {
+                System.err.println("You inputted not a number. Please try again.");
+                scan.next();
+            }
+        }
+
+        int[][] rectangularMatrix = new int[n][];
+        int[][] transposedRectangularMatrix = new int[m][];
+
+        for (int i = 0; i < rectangularMatrix.length; i++) {
+            rectangularMatrix[i] = new int[m];
+        }
+
+        for (int i = 0; i < transposedRectangularMatrix.length; i++) {
+            rectangularMatrix[i] = new int[n];
+        }
+
+        for (int i = 0; i < rectangularMatrix.length; i++) {
+            for (int j = 0; j < rectangularMatrix[i].length; j++) {
+                rectangularMatrix[i][j] = (int) Math.round(Math.random() * 100);
+            }
+        }
+
+        return rectangularMatrix;
 
     }
+
+
+    public int[][] getSizeOfTransposedRectangularMatrix(int[][] rectangularMatrix){
+        int n;
+        int m;
+        n = rectangularMatrix.length;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     public void rectangularMatrixTransposition() {
         int n = 2;
@@ -55,6 +120,12 @@ public class RectangularMatrixTransposition {
             }
             System.out.println();
         }
+
+    }
+
+
+    @Override
+    public void transposeMatrix(int[][] matrix) {
 
     }
 }

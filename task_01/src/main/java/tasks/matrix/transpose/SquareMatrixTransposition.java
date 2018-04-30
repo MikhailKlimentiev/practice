@@ -6,10 +6,10 @@ import java.util.Scanner;
  * SquareMatrixTransposition.
  *
  * @author Mikhail Klimentyev
- * @version 2.0
- * @since 04/30/201s
+ * @version 3.0
+ * @since 04/30/2018
  */
-public class SquareMatrixTransposition extends MatrixTransposition {
+public class SquareMatrixTransposition {
 
     /**
      * getSizeAndInitializeMatrix
@@ -19,7 +19,6 @@ public class SquareMatrixTransposition extends MatrixTransposition {
      * @param scan - gets square matrix size from console
      * @return squareMatrix - initialized square matrix
      */
-    @Override
     public int[][] getSizeAndInitializeMatrix(Scanner scan) {
         int squareMatrixSize = 0;
         int temp;
@@ -31,7 +30,7 @@ public class SquareMatrixTransposition extends MatrixTransposition {
                 squareMatrixSize = scan.nextInt();
                 condition = false;
             } else {
-                System.out.println("You entered not a number. Please try again.\n");
+                System.err.println("You entered not a number. Please try again.\n");
                 scan.next();
             }
         }
@@ -59,7 +58,6 @@ public class SquareMatrixTransposition extends MatrixTransposition {
      *
      * @param squareMatrix - initialized square matrix
      */
-    @Override
     public void transposeMatrix(int[][] squareMatrix) {
         int temp;
 
