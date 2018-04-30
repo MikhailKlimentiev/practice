@@ -9,17 +9,18 @@ import java.util.Scanner;
  * @version 2.0
  * @since 04/30/201s
  */
-public class SquareMatrixTransposition {
+public class SquareMatrixTransposition extends MatrixTransposition {
 
     /**
-     * getSizeAndInitializeSquareMatrix
+     * getSizeAndInitializeMatrix
      * this method gets size of square matrix from console, creates square matrix, initializes square matrix
      * with random numbers, prints in console initial square matrix, returns square matrix.
      *
      * @param scan - gets square matrix size from console
      * @return squareMatrix - initialized square matrix
      */
-    public int[][] getSizeAndInitializeSquareMatrix(Scanner scan) {
+    @Override
+    public int[][] getSizeAndInitializeMatrix(Scanner scan) {
         int squareMatrixSize = 0;
         int temp;
         boolean condition = true;
@@ -53,12 +54,13 @@ public class SquareMatrixTransposition {
     }
 
     /**
-     * transposeSquareMatrix
+     * transposeMatrix
      * this method transposes received square matrix, prints transposed square matrix in console
      *
      * @param squareMatrix - initialized square matrix
      */
-    public void transposeSquareMatrix(int[][] squareMatrix) {
+    @Override
+    public void transposeMatrix(int[][] squareMatrix) {
         int temp;
 
         for (int i = 0; i < squareMatrix.length; i++) {

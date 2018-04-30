@@ -9,7 +9,9 @@ package tasks.matrix.transpose;
  */
 public class RectangularMatrixTransposition {
 
+    public void getRectangularMatrixSize(scan){
 
+    }
 
     public void rectangularMatrixTransposition() {
         int n = 2;

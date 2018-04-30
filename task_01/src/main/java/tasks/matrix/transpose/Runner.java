@@ -18,7 +18,7 @@ public class Runner {
 //        rectangularMatrixTransposition.RectangularMatrixTransposition();
         Scanner scan = new Scanner(System.in);
         SquareMatrixTransposition squareMatrixTransposition = new SquareMatrixTransposition();
-        squareMatrixTransposition.transposeSquareMatrix(squareMatrixTransposition.getSizeAndInitializeSquareMatrix(scan));
+        squareMatrixTransposition.transposeMatrix(squareMatrixTransposition.getSizeAndInitializeMatrix(scan));
 
 
     }
