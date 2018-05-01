@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>task_01</module>
+		<module>task_02</module>
 	</modules>
 
 	<build>
