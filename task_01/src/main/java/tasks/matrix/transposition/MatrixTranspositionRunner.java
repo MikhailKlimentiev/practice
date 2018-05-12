@@ -13,13 +13,13 @@ package tasks.matrix.transposition;
 import java.util.Scanner;
 
 /**
- * Runner.
+ * MatrixTranspositionRunner.
  *
  * @author Mikhail Klimentyev
  * @version 2.0
  * @since 04/30/2018
  */
-public class Runner {
+public class MatrixTranspositionRunner {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
