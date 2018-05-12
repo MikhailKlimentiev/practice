@@ -1,5 +1,5 @@
 /**
- * Runner.
+ * MatrixMultiplicationRunner.
  *
  * @author Mikhail Klimentsyeu
  * @version 1.0
@@ -8,7 +8,7 @@
 
 package tasks.matrix.multiplication;
 
-public class Runner {
+public class MatrixMultiplicationRunner {
     public static void main(String[] args) {
         int[][] firstMatrix = new int[m][n];
         int[][] secondMatrix = new int[n][q];

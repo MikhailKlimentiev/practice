@@ -14,13 +14,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Runner.
+ * MatrixRotationRunner.
  *
  * @author Mikhail Klimentyev
  * @version 1.0
  * @since 05/01/2018
  */
-public class Runner {
+public class MatrixRotationRunner {
 
     public static void main(String[] args) {
 

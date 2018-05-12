@@ -1,7 +1,7 @@
 /**
  * Package for rotation a matrix task.
  * Includes classes:
- * Runner
+ * MatrixRotationRunner
  * @author Mikhail Klimentyev
  * @version 1.0
  * @since 05/01/2018
